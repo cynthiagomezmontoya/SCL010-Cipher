@@ -4,22 +4,22 @@ describe('cipher', () => {
     assert.equal(typeof cipher, 'object');
   });
 
-  describe('cipher.encode', () => {
+  describe('offset', () => {
 
-    it('debería ser una función', () => {
-      assert.equal(typeof cipher.encode, 'function');
+    it('debería ser una vocal', () => {
+      assert.equal(typeof cipher.offset, 'line');
     });
 
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33');
+    it('debería retornar "A"  para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 0');
   });
 
-  describe('cipher.decode', () => {
+  describe('offset', () => {
 
-    it('debería ser una función', () => {
-      assert.equal(typeof cipher.decode, 'function');
+    it('debería ser una letra', () => {
+      assert.equal(typeof cipher.offset, 'line');
     });
 
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33');
+    it('debería retornar "Z"para " ZYXWVUTSRQPONMLKJIHGFEDCBA" con offset del 90');
   });
 
 });
