@@ -11,6 +11,12 @@ h1{
     text-align:center;
     font-family: font[initial]inherit;
     }
+  h3{
+        /*estilos para títulos h3*/
+        color: rgb(121, 64, 116);
+        text-align:center;
+        font-family: font[initial]inherit;
+        }
   div {
   /*div genérico*/
   text-align:center;
@@ -37,5 +43,5 @@ h1{
   }
   .responsive-img{
     text-align: center;
-    
+
   }
