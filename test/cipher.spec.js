@@ -1,25 +1,28 @@
-describe('cipher', () => {
+describe('cipher', () => { // describe a quien quiero testear
 
-  it('debería ser un objeto', () => {
+  it('debería ser un objeto', () => { //it= que quiero testiar de la funcion
     assert.equal(typeof cipher, 'object');
   });
 
-  describe('offset', () => {
+  describe('cipher,encode', () => {
 
-    it('debería ser una vocal', () => {
-      assert.equal(typeof cipher.offset, 'line');
+    it('debería ser una funcion ', () => {
+      assert.equal(typeof cipher.encode,"function");
     });
 
-    it('debería retornar "A"  para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 0');
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', ()=>{
+      assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ",33),"HIJKLMNOPQRSTUVWXYZABCDEFG");
+    });
   });
+  
+  describe('cipher,decode', () => {
 
-  describe('offset', () => {
-
-    it('debería ser una letra', () => {
-      assert.equal(typeof cipher.offset, 'line');
+    it('debería ser una funcion', () => {
+      assert.equal(typeof cipher.decode, "function");
     });
 
-    it('debería retornar "Z"para " ZYXWVUTSRQPONMLKJIHGFEDCBA" con offset del 90');
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
+      assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    });
   });
-
 });

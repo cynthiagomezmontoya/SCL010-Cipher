@@ -1,33 +1,39 @@
 /* Acá va tu código */
 h1{
     /*estilos para títulos h1*/
-  color:rgb(121, 64, 116);
+  color: black(121,64,116);
   text-align:center;
   font-family: font[initial]inherit;
+  
   }
   h2{
     /*estilos para títulos h2*/
-    color: rgb(121, 64, 116);
+    color:black (121, 64, 116);
     text-align:center;
     font-family: font[initial]inherit;
-    }
+    
+ }
   h3{
-        /*estilos para títulos h3*/
-        color: rgb(121, 64, 116);
-        text-align:center;
-        font-family: font[initial]inherit;
-        }
+    /*estilos para títulos h3*/
+    color: black(121, 64, 116);
+    text-align:center;
+    font-family: font[initial]inherit;
+        
+ }
   div {
   /*div genérico*/
   text-align:center;
-  }  
-  
+  color:black (121, 64, 116);
+  font-family: font[initial]inherit;
+ }  
+ 
   body{
-  max-width: 100%;
+  max-width: 1024px;
   max-height: 100%;
   text-align: center;
-  
-  }
+  font-size: 80%;
+ }
+
   html{
   height: 100%;
   background-color:rgb(121, 61, 119);
@@ -39,9 +45,8 @@ h1{
   height: 49%;
   background-color:rgb(121, 64, 116);
   margin: 1% 1%;
+  max-width: 1024px;
+  max-height: 100%;
   
   }
-  .responsive-img{
-    text-align: center;
 
-  }
