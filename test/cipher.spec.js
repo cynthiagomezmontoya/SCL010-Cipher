@@ -25,4 +25,15 @@ describe('cipher', () => { // describe a quien quiero testear
       assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
   });
+
+describe('cipher,decode', () => {
+
+  it('debería ser una funcion', () => {
+    assert.equal(typeof cipher.decode, "function");
+  });
+
+  it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
+    asset.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  });
+});
 });
