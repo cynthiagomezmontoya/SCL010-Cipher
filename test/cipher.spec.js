@@ -10,8 +10,8 @@ describe('cipher', () => { // describe a quien quiero testear
       assert.equal(typeof cipher.encode,"function");
     });
 
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', ()=>{
-      assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ",33),"HIJKLMNOPQRSTUVWXYZABCDEFG");
+    it('debería retornar "BCDEFGHIJKLMNOPQRSTUVWXYZA" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 1', ()=>{
+      assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ",1),"BCDEFGHIJKLMNOPQRSTUVWXYZA");
     });
   });
   
@@ -21,19 +21,8 @@ describe('cipher', () => { // describe a quien quiero testear
       assert.equal(typeof cipher.decode, "function");
     });
 
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
-      assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "TUVWXYZABCDEFGHIJKLMNOPQRS" con offset 33',()=>{
+      assert.equal(cipher.decode("TUVWXYZABCDEFGHIJKLMNOPQRS",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
   });
-
-describe('cipher,decode', () => {
-
-  it('debería ser una funcion', () => {
-    assert.equal(typeof cipher.decode, "function");
-  });
-
-  it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
-    asset.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-  });
-});
 });

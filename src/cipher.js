@@ -26,7 +26,6 @@ window.cipher = {
 return result1;
   
 },
-
 decode: (offset, deDecode) => { 
   let result2 = '';
   let numMayuscula1='';
@@ -39,7 +38,7 @@ decode: (offset, deDecode) => {
   if (toAscii>=65 && toAscii<=90){
   numMayuscula1 = String.fromCharCode((toAscii+ 65 - offset-26)%26 + 65);
   result2 += numMayuscula1;
-  //A-Z
+  
   }else if (toAscii === 32){
   toAscii = ((toAscii+ 32 - offset-1)%1 + 32);
   Espacio1 = String.fromCharCode(toAscii);
