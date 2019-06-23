@@ -44,22 +44,22 @@ decode: (offset, texto) => {
   if (toAscii>=65 && toAscii<=90){
   numMayuscula1 = String.fromCharCode((toAscii+ 65 - offset-26)%26 + 65);
   result2 += numMayuscula1;
-  
+  // espacios
   }else if (toAscii === 32){
   toAscii = ((toAscii+ 32 - offset-1)%1 + 32);
   Espacio1 = String.fromCharCode(toAscii);
   result2 += Espacio1;
- 
+ // mayusculas
   }else if (toAscii>=97 && toAscii<=122){
   numMINUSCULA1 = String.fromCharCode((toAscii+97 - offset-38)%26 + 97);
   result2 += numMINUSCULA1;
-  
+  // numeros
 }else if (toAscii>=48 && toAscii<=57){
   Num1 = String.fromCharCode((toAscii-57 - offset)%10 + 57);
   result2 += Num1;
   }
 }
-//console.log(result2);
+//console.log(result2); rsultado
 return result2;
 }
 };

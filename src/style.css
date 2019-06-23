@@ -45,6 +45,7 @@ h1{
   background-color:rgb(121, 64, 116);
   margin: 1% 1%;
   border: 12 px solid;
-  
+  display: flex;
+  flex-direction: column;
   }
 

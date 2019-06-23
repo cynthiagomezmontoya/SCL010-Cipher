@@ -6,8 +6,8 @@
 * Descripción del Proyecto
 * Objetivos de Aprendizaje
 * Definición del Producto
-  Primer Prototipo
-  Prototipo Final
+  *Primer Prototipo
+  *Prototipo Final
 * Consideraciones Tecnicas
 * Contenido de Referencia
 * Herramientas
@@ -33,8 +33,8 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 
 # DESCRIPCION DEL PROYECTO #
 
-En este proyecto me basare en que los usuarios podran escribir cualquier tipo de mensaje y poder hacerlo secreto a travez del cifrado cesar. 
-Los usuarios van a poder seleccionar un numero de desplazamiento maximo hasta 33, escribir un mensaje utilizando letra mayusculas, minusculas y espacios .
+En este proyecto  los usuarios podran escribir cualquier tipo de mensaje y  hacerlo secreto a travez del cifrado cesar. 
+Los usuarios van a poder seleccionar un numero de desplazamiento maximo hasta 33, escribir un mensaje utilizando letra mayusculas, minusculas,espacios y numeros.Los usuarios podran cifrar, descifrar o borrar sus mensajes.
 
 
 # OBJETIVOS DE APRENDIZAJE #
@@ -57,11 +57,16 @@ Los principales usuarios de aplicacion son personas entre los 13 y 30 años.
 Los objetivos de los usuarios a los cuales se testeo el producto,era para enviar mensajes entre los amigos de sus salidas e informacion personal.Otro grupo de usuarios la utilizo para enviar mensajes de saludos .
 Creo que es una aplicacion muy util, porque resuelve los problemas de usauarios que desean que solo una o algunas personas conozcan la informacion.
 
- * Primer Prototipo *
+ # Primer Prototipo #
 
+El primer prototipo ,solo se bajo en en informacion general de loque e debia realizar en el proyecto.
 
+<a href="https://ibb.co/vPVsXpt"><img src="https://i.ibb.co/LtYQNmG/foto1.jpg" alt="foto1" border="0"></a>
 
-* Prototipo Final *
+# Prototipo Final #
+El prototipo final, se baso en informacion recibida por los usuarios que utilizarian la pagina, entonces se realizaron varias modificaciones, permitendo tener una pagina mucho mas amigable con el usuario.
+
+<a href="https://ibb.co/vPVsXpt"><img src="https://i.ibb.co/LtYQNmG/foto1.jpg" alt="foto1" border="0"></a>
 
 # CONCIDERACIONES TECNICAS #
 
