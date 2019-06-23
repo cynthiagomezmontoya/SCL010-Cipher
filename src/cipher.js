@@ -1,13 +1,13 @@
 window.cipher = {
-  encode: (offset,ciEncode) => {
+  encode: (offset,texto) => {
     /* Acá va tu código */
     let result1 = '';
     let numMayuscula='';
     let Espacio='';
     let numMINUSCULA='';
     
-    for(let i = 0; i< ciEncode.length; i++){
-    let toAscii = ciEncode.charCodeAt(i);
+    for(let i = 0; i< texto.length; i++){
+    let toAscii = texto.charCodeAt(i);
     //console.log(toAscii);
     if (toAscii>=65 && toAscii<=90){
     numMayuscula = String.fromCharCode((toAscii- 65 + offset)%26 + 65);
@@ -26,14 +26,14 @@ window.cipher = {
 return result1;
   
 },
-decode: (offset, deDecode) => { 
+decode: (offset, texto) => { 
   let result2 = '';
   let numMayuscula1='';
   let Espacio1='';
   let numMINUSCULA1='';
  
-  for(let i = 0; i< deDecode.length; i++){
-  let toAscii = deDecode.charCodeAt(i);
+  for(let i = 0; i< texto.length; i++){
+  let toAscii = texto.charCodeAt(i);
   //console.log(toAscii);
   if (toAscii>=65 && toAscii<=90){
   numMayuscula1 = String.fromCharCode((toAscii+ 65 - offset-26)%26 + 65);
