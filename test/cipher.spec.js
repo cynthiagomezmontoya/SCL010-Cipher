@@ -10,8 +10,8 @@ describe('cipher', () => { // describe a quien quiero testear
       assert.equal(typeof cipher.encode,"function");
     });
 
-    it('debería retornar "BCDEFGHIJKLMNOPQRSTUVWXYZA" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 1', ()=>{
-      assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ",1),"BCDEFGHIJKLMNOPQRSTUVWXYZA");
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      assert.equal(window.cipher.encode (33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
   });
   
@@ -20,9 +20,9 @@ describe('cipher', () => { // describe a quien quiero testear
     it('debería ser una funcion', () => {
       assert.equal(typeof cipher.decode, "function");
     });
-
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "TUVWXYZABCDEFGHIJKLMNOPQRS" con offset 33',()=>{
-      assert.equal(cipher.decode("TUVWXYZABCDEFGHIJKLMNOPQRS",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
+      assert.equal(window.cipher.decode (33, 'HIJKLMNOPQRSTUVWXYZABCDEFG'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
+    
   });
 });
